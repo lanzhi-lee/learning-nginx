@@ -19,7 +19,13 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ##### 进入容器
 
 ```bash
-docker exec -it cd34cd1e79a3 /usr/bin/zsh
+docker exec -it learning-nginx /usr/bin/zsh
+```
+
+##### 从容器中复制文件
+
+```
+docker cp learning-nginx:/usr/share/nginx/html/. ./src/html/.
 ```
 
 ##### 参考教程
