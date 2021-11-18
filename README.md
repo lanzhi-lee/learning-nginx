@@ -5,6 +5,7 @@ docker 启动时增加以下映射
 ```text
 /Users/lee/development/_learn/learning-nginx/src/conf.d /etc/nginx/conf.d
 /Users/lee/development/_learn/learning-nginx/src/nginx.conf /etc/nginx/nginx.conf
+/Users/lee/development/_learn/learning-nginx/src/html /usr/share/nginx/html
 ```
 
 ##### 增加基本工具
@@ -18,7 +19,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ##### 进入容器
 
 ```bash
-docker exec -it d584201cbe83 /usr/bin/zsh
+docker exec -it cd34cd1e79a3 /usr/bin/zsh
 ```
 
 ##### 参考教程
