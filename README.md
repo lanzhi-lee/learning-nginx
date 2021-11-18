@@ -7,6 +7,20 @@ docker 启动时增加以下映射
 /Users/lee/development/_learn/learning-nginx/src/nginx.conf /etc/nginx/nginx.conf
 ```
 
+##### 增加基本工具
+
+```bash
+apt update && \
+apt install -y git curl zsh && \
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+##### 进入容器
+
+```bash
+docker exec -it d584201cbe83 /usr/bin/zsh
+```
+
 ##### 参考教程
 
 - [Nginx 从入门到实践，万字详解！](https://juejin.cn/post/6844904144235413512)
