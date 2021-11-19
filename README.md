@@ -6,6 +6,7 @@ docker 启动时增加以下映射
 /Users/lee/development/_learn/learning-nginx/src/conf.d /etc/nginx/conf.d
 /Users/lee/development/_learn/learning-nginx/src/nginx.conf /etc/nginx/nginx.conf
 /Users/lee/development/_learn/learning-nginx/src/html /usr/share/nginx/html
+/Users/lee/development/_learn/learning-nginx /workspace/learning-nginx
 ```
 
 ##### 增加基本工具
