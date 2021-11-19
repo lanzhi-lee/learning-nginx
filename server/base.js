@@ -18,6 +18,23 @@ module.exports = (port) => {
   Router.get('/99981', async (ctx) => {
     ctx.response.body = `<h1>Index 99981</h1>`
   })
+  // 2.cors
+  // Router.get('/api', async (ctx) => {
+  //   ctx.set('access-control-allow-origin', '*')
+  //   ctx.response.body = { code: 0, msg: 'dev.mi.com' }
+  // })
+  Router.get('/apis', async (ctx) => {
+    ctx.cookies.set('cid', '212630958', {
+      domain: 'be.dev.leezx.cn', // 写cookie所在的域名
+      path: '/', // 写cookie所在的路径
+      maxAge: 10 * 60 * 1000, // cookie有效时长
+      expires: new Date('2017-02-15'), // cookie失效时间
+      httpOnly: false, // 是否只用于http请求中获取
+      overwrite: false, // 是否允许重写
+    })
+
+    ctx.response.body = { code: 0, msg: 'dev.mi.com apis' }
+  })
 
   App.use(Router.routes())
 
